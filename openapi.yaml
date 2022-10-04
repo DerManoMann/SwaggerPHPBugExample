@@ -1,0 +1,19 @@
+openapi: 3.0.0
+paths:
+  /path:
+    parameters:
+      -
+        name: example_param
+        in: query
+        required: true
+        style: spaceDelimited
+        explode: true
+components:
+  schemas:
+    ExampleNestedSchema:
+      properties:
+        rows:
+          type: array
+          items:
+            type: object
+      type: object
